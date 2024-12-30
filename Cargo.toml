@@ -1,0 +1,24 @@
+[package]
+name = "wallpaper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "0.25.5"
+rand = "0.8.5"
+
+
+[lints.rust]
+missing_debug_implementations = "warn"
+unsafe_code = "deny"
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+alloc_instead_of_core = "warn"
+std_instead_of_core = "warn"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+module_name_repetitions = "allow"
